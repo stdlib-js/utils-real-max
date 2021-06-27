@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-real-max",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Return the maximum finite value capable of being represented by a numeric real type.",
   "license": "Apache-2.0",
   "author": {
