@@ -20,7 +20,7 @@ limitations under the License.
 
 # realmax
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Return the maximum finite value capable of being represented by a numeric real type.
 
@@ -184,8 +184,8 @@ $ realmax float16
 
 ## See Also
 
--   [`@stdlib/utils/real-min`][@stdlib/utils/real-min]: return the smallest positive normal value capable of being represented by a numeric real type.
--   [`@stdlib/utils/type-max`][@stdlib/utils/type-max]: return the maximum value of a specified numeric type.
+-   <span class="package-name">[`@stdlib/utils/real-min`][@stdlib/utils/real-min]</span><span class="delimiter">: </span><span class="description">return the smallest positive normal value capable of being represented by a numeric real type.</span>
+-   <span class="package-name">[`@stdlib/utils/type-max`][@stdlib/utils/type-max]</span><span class="delimiter">: </span><span class="description">return the maximum value of a specified numeric type.</span>
 
 </section>
 
@@ -236,8 +236,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-real-max/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-real-max?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/utils-real-max.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/utils-real-max/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
