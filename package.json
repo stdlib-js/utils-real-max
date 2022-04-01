@@ -1,0 +1,50 @@
+{
+  "name": "@stdlib/utils-real-max",
+  "version": "0.0.0",
+  "description": "Return the maximum finite value capable of being represented by a numeric real type.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/utils-real-max.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "mathematics",
+    "math",
+    "type",
+    "max",
+    "maximum",
+    "value",
+    "largest",
+    "greatest",
+    "realmax",
+    "real",
+    "floating-point",
+    "ieee754",
+    "double",
+    "half",
+    "single",
+    "precision",
+    "float64",
+    "float32",
+    "float16",
+    "float",
+    "integer",
+    "int"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
