@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-real-max
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import realmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-real-max@esm/index.mjs';
+var realmax = require( '@stdlib/utils-real-max' );
 ```
 
 #### realmax( dtype )
@@ -79,13 +95,8 @@ The following numeric **real** types are supported:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import realmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-real-max@esm/index.mjs';
+```javascript
+var realmax = require( '@stdlib/utils-real-max' );
 
 var m = realmax( 'float64' );
 // returns 1.7976931348623157e+308
@@ -95,10 +106,6 @@ m = realmax( 'float32' );
 
 m = realmax( 'float16' );
 // returns 65504.0
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -107,7 +114,69 @@ m = realmax( 'float16' );
 
 <!-- Section for describing a command-line interface. -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use the module as a general utility, install the module globally
+
+```bash
+npm install -g @stdlib/utils-real-max
+```
+
+</section>
+<!-- CLI usage documentation. -->
+
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: realmax [options] <dtype>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- CLI usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ realmax float16
+65504.0
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -141,7 +210,7 @@ m = realmax( 'float16' );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -158,7 +227,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -203,9 +272,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/real-min]: https://github.com/stdlib-js/utils-real-min/tree/esm
+[@stdlib/utils/real-min]: https://github.com/stdlib-js/utils-real-min
 
-[@stdlib/utils/type-max]: https://github.com/stdlib-js/utils-type-max/tree/esm
+[@stdlib/utils/type-max]: https://github.com/stdlib-js/utils-type-max
 
 <!-- </related-links> -->
 
