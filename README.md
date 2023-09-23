@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import realmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-real-max@deno/mod.js';
+import realmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-real-max@v0.1.0-deno/mod.js';
 ```
 
 #### realmax( dtype )
@@ -91,7 +91,7 @@ The following numeric **real** types are supported:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import realmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-real-max@deno/mod.js';
+import realmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-real-max@v0.1.0-deno/mod.js';
 
 var m = realmax( 'float64' );
 // returns 1.7976931348623157e+308
