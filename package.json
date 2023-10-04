@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-real-max",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Return the maximum finite value capable of being represented by a numeric real type.",
   "license": "Apache-2.0",
   "author": {
@@ -40,12 +40,12 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/cli-ctor": "^0.1.0",
+    "@stdlib/cli-ctor": "^0.1.1",
     "@stdlib/constants-float16-max": "^0.1.0",
-    "@stdlib/constants-float32-max": "^0.1.0",
+    "@stdlib/constants-float32-max": "^0.1.1",
     "@stdlib/constants-float64-max": "^0.1.0",
-    "@stdlib/fs-read-file": "^0.1.0",
-    "@stdlib/string-format": "^0.1.0"
+    "@stdlib/fs-read-file": "^0.1.1",
+    "@stdlib/string-format": "^0.1.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-browser": "^0.1.0",
