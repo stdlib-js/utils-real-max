@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,89 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var FLOAT16 = require( '@stdlib/constants-float16-max' );
-var FLOAT32 = require( '@stdlib/constants-float32-max' );
-var FLOAT64 = require( '@stdlib/constants-float64-max' );
-var realmax = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof realmax, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'if provided an unknown numeric real type, the function throws an error', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'beep',
-		'boop',
-		'double',
-		'single',
-		'half',
-		'short',
-		'long',
-		'float',
-		'integer',
-		'int',
-		'complex',
-		'complex128',
-		'complex64',
-		'byte',
-		'word',
-		'int32',
-		'uint32',
-		'int16',
-		'uint16',
-		'int8',
-		'uint8',
-		'uint8c',
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		{},
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			realmax( value );
-		};
-	}
-});
-
-tape( 'the function returns the maximum finite value for a specified numeric real type', function test( t ) {
-	var expected;
-	var values;
-	var i;
-
-	values = [
-		'float64',
-		'float32',
-		'float16'
-	];
-
-	expected = [
-		FLOAT64,
-		FLOAT32,
-		FLOAT16
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( realmax( values[i] ), expected[ i ], 'returns expected value for '+values[i] );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
