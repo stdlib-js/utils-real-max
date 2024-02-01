@@ -45,25 +45,94 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/utils-real-max
+```
 
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var realmax = require( '@stdlib/utils-real-max' );
+```
+
+#### realmax( dtype )
+
+Returns the maximum **finite** value capable of being represented by a numeric **real** type.
+
+```javascript
+var m = realmax( 'float64' );
+// returns 1.7976931348623157e+308
+```
+
+The following numeric **real** types are supported:
+
+-   `float64`: double-precision floating-point numbers
+-   `float32`: single-precision floating-point numbers
+-   `float16`: half-precision floating-point numbers
+
+</section>
+
+<!-- /.usage -->
 
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
+<section class="notes">
 
+</section>
+
+<!-- /.notes -->
 
 <!-- Package usage examples. -->
 
+<section class="examples">
 
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var realmax = require( '@stdlib/utils-real-max' );
+
+var m = realmax( 'float64' );
+// returns 1.7976931348623157e+308
+
+m = realmax( 'float32' );
+// returns 3.4028234663852886e+38
+
+m = realmax( 'float16' );
+// returns 65504.0
+```
+
+</section>
+
+<!-- /.examples -->
 
 <!-- Section for describing a command-line interface. -->
 
-
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -81,7 +150,7 @@ npm install -g @stdlib/utils-real-max-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: realmax [options] <dtype>
@@ -108,7 +177,7 @@ Options:
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ realmax float16
@@ -135,9 +204,10 @@ $ realmax float16
 
 <section class="related">
 
+* * *
+
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils-real-max`][@stdlib/utils-real-max]</span><span class="delimiter">: </span><span class="description">return the maximum finite value capable of being represented by a numeric real type.</span>
 -   <span class="package-name">[`@stdlib/utils-real-min`][@stdlib/utils/real-min]</span><span class="delimiter">: </span><span class="description">return the smallest positive normal value capable of being represented by a numeric real type.</span>
 -   <span class="package-name">[`@stdlib/utils-type-max`][@stdlib/utils/type-max]</span><span class="delimiter">: </span><span class="description">return the maximum value of a specified numeric type.</span>
 
@@ -158,7 +228,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -181,8 +251,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/utils-real-max-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/utils-real-max-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/utils-real-max.svg
+[npm-url]: https://npmjs.org/package/@stdlib/utils-real-max
 
 [test-image]: https://github.com/stdlib-js/utils-real-max/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/utils-real-max/actions/workflows/test.yml?query=branch:main
@@ -212,8 +282,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/utils-real-max/tree/deno
+[deno-readme]: https://github.com/stdlib-js/utils-real-max/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/utils-real-max/tree/umd
+[umd-readme]: https://github.com/stdlib-js/utils-real-max/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/utils-real-max/tree/esm
+[esm-readme]: https://github.com/stdlib-js/utils-real-max/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/utils-real-max/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-real-max/main/LICENSE
