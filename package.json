@@ -45,7 +45,7 @@
     "@stdlib/constants-float32-max": "^0.2.1",
     "@stdlib/constants-float64-max": "^0.2.1",
     "@stdlib/fs-read-file": "^0.2.1",
-    "@stdlib/string-format": "^0.2.1"
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-browser": "^0.2.1",
