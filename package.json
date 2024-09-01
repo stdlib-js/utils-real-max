@@ -45,7 +45,7 @@
     "@stdlib/constants-float32-max": "^0.2.2",
     "@stdlib/constants-float64-max": "^0.2.2",
     "@stdlib/fs-read-file": "^0.2.2",
-    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2",
     "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
